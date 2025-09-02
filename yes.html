@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Report – Yes Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Love Report</h1>
+    <p>To make things easy for you, I've created this page where you can report and tell me what happened.</p>
+    <p>Whenever you can, just fill this report and send it by clicking on submit.</p>
+
+    <form action="https://formspree.io/f/xnnbbykn" method="POST">
+      <label>
+        Explain your feelings here: (don’t hold back)
+        <input type="text" name="message" placeholder="What happened?" required>
+      </label>
+
+      <label>
+        Are you still in love with me?
+        <div class="radio-group">
+          <label><input type="radio" name="love_choice" value="Yes" required> Yes</label>
+          <label><input type="radio" name="love_choice" value="No"> No</label>
+        </div>
+      </label>
+
+      <label>
+        Do you want to talk about it?
+        <div class="radio-group">
+          <label><input type="radio" name="talk_choice" value="Yes" required> Yes</label>
+          <label><input type="radio" name="talk_choice" value="No"> No</label>
+        </div>
+      </label>
+
+      <label>
+        Rate the website from 0–10:
+        <input type="number" name="rating" min="0" max="10" required>
+      </label>
+
+      <label>
+        Does the website help?
+        <div class="radio-group">
+          <label><input type="radio" name="help_choice" value="Yes" required> Yes</label>
+          <label><input type="radio" name="help_choice" value="No"> No</label>
+        </div>
+      </label>
+
+      <input type="hidden" name="_redirect" value="https://itj-7.github.io/thankyou.html">
+
+      <button type="submit">Send</button>
+    </form>
+
+    <footer>
+      <p>Thank you for taking the time to fill out this report. Your feelings are valuable to me.</p>
+      <p>Remember, communication is key to understanding each other better.</p>
+      <p>Your results will be sent to my email.</p>
+    </footer>
+  </div>
+</body>
+</html>
