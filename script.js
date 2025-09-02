@@ -1,7 +1,16 @@
-document.getElementById('yesBtn').addEventListener('click', function() {
-      window.location.href = 'yes.html'; 
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const yesBtn = document.getElementById("yesBtn");
+  const noBtn = document.getElementById("noBtn");
 
-document.getElementById('noBtn').addEventListener('click', function() {
-      window.location.href = 'no.html'; 
+  if (yesBtn) {
+    yesBtn.addEventListener("click", () => {
+      window.location.href = "yes.html";
     });
+  }
+
+  if (noBtn) {
+    noBtn.addEventListener("click", () => {
+      window.location.href = "no.html";  
+    });
+  }
+});
